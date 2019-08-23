@@ -1,0 +1,9 @@
+<h1>Sign Up</h1>
+
+<%= form_for @user do |f| %>
+  <%= f.text_field :name, placeholder: "Enter your name" %>
+
+  <%= f.submit 'Sign Up' %>
+<% end %>
+
+<p>Existing Member? <%= link_to 'Log in', login_path %></p>

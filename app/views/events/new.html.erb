@@ -1,0 +1,7 @@
+<h1>Create Event</h1>
+
+<%= form_for @event do |f| %>
+  <%= f.text_field :description, placeholder: "Enter Description" %><br>
+
+  <%= f.submit 'Create Event' %>
+<% end %>
